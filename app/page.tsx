@@ -1,3 +1,4 @@
+import DashboardPreview from "@/components/DashboardPreview";
 import GradientBackground from "@/components/GradientBackground";
 import Hero from "@/components/Hero";
 import MainHeader from "@/components/MainHeader";
@@ -8,7 +9,10 @@ export default function Home() {
           
           <MainHeader/>   
           <Hero/>
+          <DashboardPreview/>
+        
           
+        
       
       
     </div>

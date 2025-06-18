@@ -1,27 +1,31 @@
-import React from 'react'
-import GradientBackground from './GradientBackground'
-import MainHeader from './MainHeader'
+  import React from 'react'
+  import GradientBackground from './GradientBackground'
+  import DashboardPreview from './DashboardPreview'
 
-const Hero = () => {
-  return (
-    <section className='max-w-6xl mx-auto pt-20 z-2 border-x h-screen border-gray-100'>
-      <div className="absolute max-w-6xl mx-auto inset-0 flex pointer-events-none">
-        <div className="flex-1 relative">
-          <div className="absolute inset-0 grid grid-cols-2">
-            <div></div>
-            <div className="border-l border-dashed border-gray-300"></div>
-          </div>
-        </div>
-        <div className="flex-1 border-l relative border-dashed border-gray-300">
-          <div className="absolute inset-0 grid grid-cols-2">
-            <div></div>
-            <div className="border-l border-dashed border-gray-300"></div>
-          </div>
-        </div>
-    
-    </div>
-    </section>
-  )
-}
 
-export default Hero
+  const Hero = () => {
+    return (
+      <section className='w-full z-2 pt-20 h-screen relative'>
+        <div className='max-w-6xl border-x mx-auto relative min-h-screen border-gray-100'>
+          <div className="absolute inset-0 flex pointer-events-none">
+            <div className="flex-1 relative">
+              <div className="grid-hero">
+                <div></div>
+                <div className="border-hero"></div>
+              </div>
+            </div>
+            <div className="flex-1 relative border-hero">
+              <div className="grid-hero">
+                <div></div>
+                <div className="border-hero"></div>
+              </div>
+            </div>
+          </div>
+          <DashboardPreview/>
+        </div>
+        <GradientBackground/>
+      </section>
+    )
+  }
+
+  export default Hero
