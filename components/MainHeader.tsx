@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import DashboardPreview from './DashboardPreview'
+import Link from 'next/link'
+
 
 const MainHeader = () => {
   return (
@@ -8,9 +9,9 @@ const MainHeader = () => {
         <div className='div-header py-3 z-20 absolute'>
             <header className='div-header  '>
                 <div className='div-header'>
-                    <a>
+                    <Link href={'./'}>
                         <Image alt='stripe-logo' src={'/stripe-white.svg'} width={60} height={50} className='mr-5 ml-2'/>
-                    </a>
+                    </Link>
                     <button className='btn-header'>
                         <span className='span-header'>Products</span>
                         <Image alt='down-arrow' src={'/down-white-chevron.svg'} width={10} height={10}/>
