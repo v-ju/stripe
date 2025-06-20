@@ -1,6 +1,7 @@
   import React from 'react'
   import GradientBackground from './GradientBackground'
   import DashboardPreview from './DashboardPreview'
+import AppLayout from './AppLayout'
 
 
   const Hero = () => {
@@ -21,9 +22,11 @@
               </div>
             </div>
           </div>
-          <DashboardPreview/>
-        </div>
+          <DashboardPreview/> 
+          <AppLayout/>
         <GradientBackground/>
+        </div>
+        
       </section>
     )
   }

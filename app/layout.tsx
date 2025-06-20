@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
-import GradientBackground from "@/components/GradientBackground";
-import Hero from "@/components/Hero";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${montserrat.variable} antialiased`}
+        className={`${montserrat.variable} ${montserrat.variable} antialiased `}
       > 
         
         {children}

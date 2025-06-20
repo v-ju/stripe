@@ -1,9 +1,26 @@
 @import "tailwindcss";
 
 
-@theme inline {
+@theme {
   --font-poppins: var(--font-poppins);
   --font-monteserrat: var(--font-monteserrat)
+
+  --color-background-main: #FFFFFF;
+  --color-purple: #9966FF;
+  --color-dark-purple: #5c55e4;
+  --color-cobalt-blue: #0073E6;
+  --color-mint-green: #00C4C4;
+
+  --text-2xs: 10px;
+  --text-3xs: 8px;
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 425px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+  --breakpoint-2xl: 1920px;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,30 +30,17 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', "Roboto", "Oxygen", "Ubuntu", "Cantarell", 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.background--custom {
-  background-color: #FFFFFF;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  
-  top: 0;
-  left: 0;
 }
 
 .canvas {
     z-index: 1;
     position: absolute;
-    top:0px;
-    left:0px;
-    right: 1000px;
-    width: 1440px;
-    height: 500px;
-    transform-origin: left center ;
-    transform: rotate(-12deg) rotateX(30deg) rotateY(5deg) scale(3) translateX(-10%) translateY(-25%);
+    width: 2560px;
+    height: 700px;
+    transform-origin:center ;
+    transform: rotate(-13deg) scale(2)  translateX(-25%) translateY(-60%);
     --gradient-color-1: #a960ee; 
     --gradient-color-2: #ff333d; 
     --gradient-color-3: #90e0ff;  
@@ -47,16 +51,20 @@ body {
     
 }
 
-@utility div-header {
+@utility obj-centered{
   @apply flex justify-center items-center
 }
 
-@utility btn-header {
+@utility btn-mainheader {
   @apply flex items-center px-5 py-3
 }
 
-@utility span-header {
-  @apply text-sm text-white mr-1
+@utility span-mainheader {
+  @apply text-base text-white mr-1 font-semibold
+}
+
+@utility nav-mainheader {
+  @apply flex text-white text-base font-medium 
 }
 
 @utility grid-hero{
@@ -65,4 +73,40 @@ body {
 
 @utility border-hero{
   @apply border-l border-dashed border-gray-200
+}
+
+@utility font-top-dashboard{
+  @apply tracking-tight font-normal text-2xs
+}
+
+@utility bottom-dashboard-div{
+  @apply border-transparent shadow-2xl aspect-square rounded-sm bg-white p-3
+}
+
+@utility common-dashboard-font{
+  @apply text-2xs font-semibold
+}
+
+@utility title-bottom-dashboard {
+  @apply  common-dashboard-font tracking-tighter 
+}
+
+@utility percent-bottom-dashboard{
+  @apply text-green-500 ml-1 text-[8px]
+}
+
+@utility title-2-bottom-dash {
+  @apply title-bottom-dashboard text-gray-400
+}
+
+@utility invoice-items-dashboard{
+  @apply flex items-center justify-between py-3 border-b-2 border-gray-200 
+}
+
+@utility invoice-dot-dashboard{
+  @apply w-[6px] h-[6px] border-0 rounded-xs mr-1
+}
+
+@utility invoice-amount-dashboard{
+  @apply font-normal text-[8px] text-black
 }
