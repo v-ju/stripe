@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const AppLayout = () => {
   return (
-    <div className='absolute left-175 top-24 w-70 h-135 z-20 p-2 border-0 border-transparent rounded-4xl bg-white/85 shadow-2xl'>
+    <div className='absolute left-180 top-24 w-70 h-135 z-20 p-2 border-0 border-transparent rounded-4xl bg-white/95 shadow-2xl'>
       <div className='h-full flex-col flex justify-start items-center  border-transparent shadow-2xl bg-white rounded-3xl '>
         <div className='pt-5'>
           <Image alt='magazine-cover' src={'./magazine-cover.svg'} width={80} height={80} />

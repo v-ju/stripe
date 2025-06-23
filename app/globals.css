@@ -38,9 +38,9 @@ body {
     z-index: 1;
     position: absolute;
     width: 2560px;
-    height: 700px;
+    height: 550px;
     transform-origin:center ;
-    transform: rotate(-13deg) scale(2)  translateX(-25%) translateY(-60%);
+    transform: rotate(-12deg) rotateX(15deg) rotateY(-1deg) scale(2)  translateX(-22%) translateY(-55%);
     --gradient-color-1: #a960ee; 
     --gradient-color-2: #ff333d; 
     --gradient-color-3: #90e0ff;  
@@ -56,7 +56,7 @@ body {
 }
 
 @utility btn-mainheader {
-  @apply flex items-center px-5 py-3
+  @apply flex items-center px-3 py-1
 }
 
 @utility span-mainheader {
@@ -64,7 +64,7 @@ body {
 }
 
 @utility nav-mainheader {
-  @apply flex text-white text-base font-medium 
+  @apply  flex text-white text-base font-medium
 }
 
 @utility grid-hero{
@@ -109,4 +109,12 @@ body {
 
 @utility invoice-amount-dashboard{
   @apply font-normal text-[8px] text-black
+}
+
+@utility hover-mainheader{
+  @apply transition ease-in-out delay-500 duration-100
+}
+
+@utility span-hover{
+  @apply group-hover:text-white/75 group-hover:cursor-pointer
 }

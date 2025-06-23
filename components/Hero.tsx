@@ -1,7 +1,9 @@
-  import React from 'react'
-  import GradientBackground from './GradientBackground'
-  import DashboardPreview from './DashboardPreview'
+import React from 'react'
+import GradientBackground from './GradientBackground'
+import DashboardPreview from './DashboardPreview'
 import AppLayout from './AppLayout'
+import TextSection from './TextSection'
+import ResourcesSubheader from './subMenu/ResourcesSubheader'
 
 
   const Hero = () => {
@@ -22,6 +24,8 @@ import AppLayout from './AppLayout'
               </div>
             </div>
           </div>
+          
+          <TextSection/>
           <DashboardPreview/> 
           <AppLayout/>
         <GradientBackground/>
